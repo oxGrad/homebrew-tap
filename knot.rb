@@ -5,21 +5,21 @@
 class Knot < Formula
   desc "A lightweight, configurable dotfiles manager"
   homepage "https://github.com/oxGrad/knot"
-  version "0.1.0-nightly.20260404"
+  version "0.1.0-nightly.20260404T162429"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404/knot_0.1.0-nightly.20260404_darwin_amd64.tar.gz"
-      sha256 "e6b190896307f0c7a5f461884eda8427e1cad5d28c69cb63648bae80ca278d3b"
+      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404T162429/knot_0.1.0-nightly.20260404T162429_darwin_amd64.tar.gz"
+      sha256 "bf52c48d4bcc6728871a733f7b278a3ae26a7e98e293ee0ef746d9a0ebf35124"
 
       define_method(:install) do
         bin.install "knot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404/knot_0.1.0-nightly.20260404_darwin_arm64.tar.gz"
-      sha256 "e15e6d0c3b72b6808b8a6acf39c9b2b79c0b86ff00da969da68d896f6e59c994"
+      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404T162429/knot_0.1.0-nightly.20260404T162429_darwin_arm64.tar.gz"
+      sha256 "f5e787aef96f625c491da9ed9849e7e0e24ec7cd32bde66448acdf8d206b0bdb"
 
       define_method(:install) do
         bin.install "knot"
@@ -29,15 +29,15 @@ class Knot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404/knot_0.1.0-nightly.20260404_linux_amd64.tar.gz"
-      sha256 "620faa2b33e93df0dce69afe52953d684f0c541efe1a88da94488b9c714d321e"
+      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404T162429/knot_0.1.0-nightly.20260404T162429_linux_amd64.tar.gz"
+      sha256 "2d2cc5c1c1dda4176013391308eeedf9807b656dfc28c83a2c35a18214fd7072"
       define_method(:install) do
         bin.install "knot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404/knot_0.1.0-nightly.20260404_linux_arm64.tar.gz"
-      sha256 "02fb4077f44488962412383ee890b9d542f52048be8d8feb63f8691bf44e066e"
+      url "https://github.com/oxGrad/knot/releases/download/v0.1.0-nightly.20260404T162429/knot_0.1.0-nightly.20260404T162429_linux_arm64.tar.gz"
+      sha256 "d6320ae2d5a6b7a27f93daa97e7d235fadcb8717ac2d76062c066a6d40a71673"
       define_method(:install) do
         bin.install "knot"
       end
