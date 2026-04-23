@@ -5,21 +5,21 @@
 class Knot < Formula
   desc "A lightweight, configurable dotfiles manager"
   homepage "https://github.com/oxGrad/knot"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oxGrad/knot/releases/download/v0.2.0/knot_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c6348cbf0862dfa050118edb20db869fe22fee005eb2f9ab86d0105512337f8f"
+      url "https://github.com/oxGrad/knot/releases/download/v0.2.1/knot_0.2.1_darwin_amd64.tar.gz"
+      sha256 "6f58a3cbbadab81dc3348e91db64ac67ae1119d002a80a2b6c935997b7a654c8"
 
       define_method(:install) do
         bin.install "knot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oxGrad/knot/releases/download/v0.2.0/knot_0.2.0_darwin_arm64.tar.gz"
-      sha256 "25576034647737f7c932e2ea831249bc4fd80b3e6263d2eec004163bcae155dc"
+      url "https://github.com/oxGrad/knot/releases/download/v0.2.1/knot_0.2.1_darwin_arm64.tar.gz"
+      sha256 "5fbf72250c35d0d3cab3e78766342c41aa238654f8fb0561a6b4af4f2cebeb26"
 
       define_method(:install) do
         bin.install "knot"
@@ -29,15 +29,15 @@ class Knot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/knot/releases/download/v0.2.0/knot_0.2.0_linux_amd64.tar.gz"
-      sha256 "cd4139f2cb2f0c18a8e730ca2b89822d9a913282d39e99e0632e603f7365de25"
+      url "https://github.com/oxGrad/knot/releases/download/v0.2.1/knot_0.2.1_linux_amd64.tar.gz"
+      sha256 "1bbdef70408c2fab85db8981dd1141f727c56dba84aee6894339d3e4993afb59"
       define_method(:install) do
         bin.install "knot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/knot/releases/download/v0.2.0/knot_0.2.0_linux_arm64.tar.gz"
-      sha256 "2ea121ecd5c15c37116c5952194a7a8d0f9d56bb56116dd155f0bc7f22203496"
+      url "https://github.com/oxGrad/knot/releases/download/v0.2.1/knot_0.2.1_linux_arm64.tar.gz"
+      sha256 "b4575643137a70a43fda2cf6992f68172a162822752c9bbebff98bcb8e88fe5a"
       define_method(:install) do
         bin.install "knot"
       end
