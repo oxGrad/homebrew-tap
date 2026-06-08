@@ -5,20 +5,20 @@
 class Spicebag < Formula
   desc "Season every application perfectly — CV and cover letter manager for Claude Code"
   homepage "https://github.com/oxGrad/spicebag"
-  version "0.8.0"
+  version "0.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.0/spicebag_0.8.0_darwin_amd64.tar.gz"
-      sha256 "6e2f4aacb8ab1a257b46e1223fa33269c7dc2fe6ff3152c3a39e737c59c2f106"
+      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.1/spicebag_0.8.1_darwin_amd64.tar.gz"
+      sha256 "0e5e2f853ba5c0cfeca10cdbe5b691bdb5a5dd700568407a90f8e43fcf11d78d"
 
       define_method(:install) do
         bin.install "spicebag"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.0/spicebag_0.8.0_darwin_arm64.tar.gz"
-      sha256 "c1683476013d6a63beef411ce3edfedbac342e64ae82936df10eafb8cab06996"
+      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.1/spicebag_0.8.1_darwin_arm64.tar.gz"
+      sha256 "b16dfe4dfea08a6d77925d01a0af6d7f53cc1ebdc2f31132c4d001372078c92c"
 
       define_method(:install) do
         bin.install "spicebag"
@@ -28,15 +28,15 @@ class Spicebag < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.0/spicebag_0.8.0_linux_amd64.tar.gz"
-      sha256 "ef2b062e59cc9b842f131557ddba54a078a588f846cb4add1082511b1d387114"
+      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.1/spicebag_0.8.1_linux_amd64.tar.gz"
+      sha256 "47906fbae080a0bffea69ba2a7fe9569f50afd211be43d95f1d41e7d2f431ea7"
       define_method(:install) do
         bin.install "spicebag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.0/spicebag_0.8.0_linux_arm64.tar.gz"
-      sha256 "9a5afc9439b4e25f9cb16ceeb20618faf5cd948596c1904e1a1be39ad5331c1a"
+      url "https://github.com/oxGrad/spicebag/releases/download/v0.8.1/spicebag_0.8.1_linux_arm64.tar.gz"
+      sha256 "ef77c1fd2fc84e86069c99c0ef7629b673df85fafa56ba29ad5ccfc0bb661888"
       define_method(:install) do
         bin.install "spicebag"
       end
