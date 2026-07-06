@@ -5,21 +5,21 @@
 class Skein < Formula
   desc "Claude Code statusline: model, context/plan usage bars, caveman badge"
   homepage "https://github.com/oxGrad/skein"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oxGrad/skein/releases/download/v1.0.2/skein_1.0.2_darwin_amd64.tar.gz"
-      sha256 "55c9f241696d3b3f98deca7076c0f82a9415e6abe2aabb9bad090961f7960c65"
+      url "https://github.com/oxGrad/skein/releases/download/v1.0.3/skein_1.0.3_darwin_amd64.tar.gz"
+      sha256 "bd265b8a09b55af440adea9289ccd49766a2217f42d5b06eb6acc99a350e4c96"
 
       define_method(:install) do
         bin.install "skein"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oxGrad/skein/releases/download/v1.0.2/skein_1.0.2_darwin_arm64.tar.gz"
-      sha256 "5bae02aa9eda1ec30fef00fdd35f566f711d7e6b209b4d84ac73624cf2a45124"
+      url "https://github.com/oxGrad/skein/releases/download/v1.0.3/skein_1.0.3_darwin_arm64.tar.gz"
+      sha256 "2556516ed092deb6cb0d8104dfb83856d9389e7e661bcc253ef5eead82032764"
 
       define_method(:install) do
         bin.install "skein"
@@ -29,15 +29,15 @@ class Skein < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/skein/releases/download/v1.0.2/skein_1.0.2_linux_amd64.tar.gz"
-      sha256 "ebc732a712c494b9719325bf0bfb73fcd95dcc0c402c16cf27a0ce9a71a8121e"
+      url "https://github.com/oxGrad/skein/releases/download/v1.0.3/skein_1.0.3_linux_amd64.tar.gz"
+      sha256 "805efc1b2fcf35b38087e1bb93233a9b997731867a307713cfb85959e6e5e68a"
       define_method(:install) do
         bin.install "skein"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oxGrad/skein/releases/download/v1.0.2/skein_1.0.2_linux_arm64.tar.gz"
-      sha256 "d996f60a61325afc2cbadfc3a4abe59426ac63ef154d61102f481d6ccd021c66"
+      url "https://github.com/oxGrad/skein/releases/download/v1.0.3/skein_1.0.3_linux_arm64.tar.gz"
+      sha256 "010e79291dbd75d091602869acbd6a715891d4e295428a19eda0f57caf766d96"
       define_method(:install) do
         bin.install "skein"
       end
